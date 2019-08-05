@@ -80,3 +80,5 @@ RUN pip --version
 RUN pip install setuptools
 RUN pip install awscli --upgrade
 RUN pip install python-telegram-bot --upgrade
+RUN git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git \
+    && ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
