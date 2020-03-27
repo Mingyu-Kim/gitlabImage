@@ -73,6 +73,7 @@ RUN \
     python-pip \
     python-yaml \
     jq \
+    zip \
     && apt-get clean
 
 RUN python --version
